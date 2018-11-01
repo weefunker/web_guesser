@@ -1,5 +1,8 @@
 require 'sinatra'
+require 'sinatra/reloader'
+
+guess = rand(100)
 
 get '/' do
-  "Hello, World!"
+    "Computer GUESSED #{guess}"
 end
