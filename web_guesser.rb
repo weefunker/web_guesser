@@ -1,8 +1,8 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
-guess = rand(100)
+number = rand(100)
 
 get '/' do
-    "Computer GUESSED #{guess}"
+    erb :index, :locals => {:number => number}
 end
